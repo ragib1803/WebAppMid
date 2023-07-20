@@ -1,0 +1,123 @@
+<link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Tektur:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+body{
+        font-family: "comic sans";
+    }
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+.nav-bar {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 10vh;
+    background-color: rgba(0, 101, 243, 0.5);
+}
+
+li a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;    
+}
+
+.image-container {
+    position: relative;
+    background-image: url(/Image/homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.firstword {
+    color: rgb(47, 62, 62);
+    font-size: 80px;
+    text-shadow: 2px 2px 10px #30393d;
+    font-weight: bold;
+}
+.secondword {
+    color: cyan;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px #59c3f0;
+    font-weight: bold;
+}
+
+.resume-cta {
+    border: 2px solid cyan;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #59c3f0;
+    width: 160px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.resume-text {
+    color: rgb(79, 97, 110);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.resume-cta:hover {
+    background-color: rgba(49, 138, 160, 0.5);
+}
